@@ -1,0 +1,17 @@
+.easterbox {
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+.easterbox-interna {
+  width: 65%;
+  height: 65%;
+  text-align: center;
+}
+.eastertext{
+  color: #00AAAA;
+}
