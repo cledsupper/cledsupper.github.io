@@ -1,4 +1,3 @@
-var list_icons_fail = []
 var list_icons = document.getElementsByClassName('item-icon')
 
 // Altera o tamanho dos ícones para o menor tamanho de um ícone disponível
@@ -16,9 +15,4 @@ function refreshIcons() {
         list_icons[i].width = min_height
         list_icons[i].height = min_height
     }
-}
-
-function onIconFail(index) {
-    list_icons_fail.push(index)
-    console.error('Falha ao carregar "' + list_icons[index].alt + '"')
 }

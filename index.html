@@ -7,6 +7,13 @@
     <title>cledsupper</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/easter.css">
+    <script>
+      var list_icons_fail = []
+      function onIconFail(index) {
+        list_icons_fail.push(index)
+        console.error('Falha ao carregar "' + list_icons[index].alt + '"')
+      }
+    </script>
   </head>
   <body onload="refreshIcons()">
     <main>
@@ -34,7 +41,7 @@
         </li>
         <li>
           <a href="https://www.linkedin.com/in/cledson-ferreira-cavalcanti-323959175/">
-            <img class="item-icon" onerror="onIconFail(4)" src="https://static-exp1.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" alt="Ícone do Linkedin"/> Linkedin
+            <img class="item-icon" onerror="onIconFail(4)" src="https://www.linkedin.com/favicon.ico" alt="Ícone do Linkedin"/> Linkedin
           </a>
         </li>
       </ul>
