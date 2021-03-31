@@ -1,6 +1,7 @@
 body {
   font-family: Source Sans Pro, sans-serif;
 }
+
 a:link, a:visited {
    text-decoration: none;
    color: #00AAAA;
@@ -14,7 +15,19 @@ a:active {
 .item-icon {
   vertical-align: middle;
 }
-li {
+#social-links>li {
   list-style-type: none;
   margin: 1em;
+}
+
+#win-cr {
+  display: flex;
+  width: 95vw;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+#win-cr-close {
+  float: right;
 }

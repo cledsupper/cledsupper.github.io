@@ -16,7 +16,7 @@
         console.error('Falha ao carregar ícone ' + index)
       }
 
-      // Altera o tamanho dos ícones para o menor tamanho de um ícone disponível
+      // Altera o tamanho de todos os ícones para o menor tamanho de um ícone disponível
       function refreshIcons() {
         var list_icons = document.getElementsByClassName('item-icon')
         var min_height = list_icons[0].height
@@ -34,41 +34,57 @@
           list_icons[i].height = min_height
         }
       }
+
+      function winCRClose() {
+        document.getElementById('win-cr').style.display = 'none'
+      }
     </script>
   </head>
   <body onload="refreshIcons()">
     <main>
       <h1>Uma ruma de links meus</h1>
-      <ul>
+      <ul id="social-links">
         <li>
           <a href="https://github.com/cledsupper">
-            <img class="item-icon" onerror="onIconFail(0)" src="https://github.com/favicon.ico" alt="Ícone do GitHub"/> Projetos acadêmicos e profissionais
+            <img class="item-icon" onerror="onIconFail(0)" src="assets/GitHub-Mark-64px.png" alt="Ícone do GitHub"/> Projetos acadêmicos e profissionais
           </a>
         </li>
         <li>
           <a href="https://gitlab.com/cledsupper">
-            <img class="item-icon" onerror="onIconFail(1)" src="https://gitlab.com/favicon.ico" alt="Ícone do GitLab"/> Projetos pessoais e comunitários.
+            <img class="item-icon" onerror="onIconFail(1)" src="assets/gitlab-icon-rgb.png" alt="Ícone do GitLab"/> Projetos pessoais e comunitários.
           </a>
         </li>
         <li>
           <a href="https://instagram.com/cledson_cavalcanti">
-            <img class="item-icon" onerror="onIconFail(2)" src="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico" alt="Ícone do Instagram"/> @cledson_cavalcanti
+            <img class="item-icon" onerror="onIconFail(2)" src="assets/logotipo-do-instagram.png" alt="Ícone do Instagram"/> @cledson_cavalcanti
           </a>
         </li>
         <li>
           <a rel="me" href="https://mastodon.technology/@cledson_cavalcanti">
-            <img class="item-icon" onerror="onIconFail(3)" src="https://mastodon.technology/favicon.ico" alt="Ícone do Mastodon"/> Microblog
+            <img class="item-icon" onerror="onIconFail(3)" src="assets/logotipo-do-mastodon.png" alt="Ícone do Mastodon"/> Microblog
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/cledson-ferreira-cavalcanti-323959175/">
-            <img class="item-icon" onerror="onIconFail(4)" src="https://www.linkedin.com/favicon.ico" alt="Ícone do Linkedin"/> Linkedin
+            <img class="item-icon" onerror="onIconFail(4)" src="assets/linkedin.png" alt="Ícone do Linkedin"/> Linkedin
           </a>
         </li>
       </ul>
       <br>
 
       <p>por <span style="color: #00AAAA">led</span><span style="color: #AA00AA">so</span></p>
+
+      <br>
+      <div id="win-cr">
+        <div>
+          <div>
+            <h3 style="display: inline-block">Atribuição de autoria</h3> <a id="win-cr-close" href="javascript:winCRClose()">[X]</a>
+          </div>
+          <ul>
+            <li>Ícones do Instagram e do Linkedin feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></li>
+          </ul>
+        </div>
+      </div>
     </main>
 
     <div class="easterbox">
