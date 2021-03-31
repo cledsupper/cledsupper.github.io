@@ -3,19 +3,40 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>cledsupper</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/easter.css">
   </head>
-  <body>
+  <body onload="refreshIcons()">
     <main>
       <h1>Uma ruma de links meus</h1>
       <ul>
-        <li><a href="https://github.com/cledsupper">Projetos acadêmicos e profissionais</a></li>
-        <li><a href="https://gitlab.com/cledsupper">Projetos pessoais e experimentos</a>
-        <li><a rel="me" href="https://mastodon.technology/@cledson_cavalcanti">Espaço de ideias e &quot;track&quot; de atividades no Mastodon</a></li>
-        <li><a href="https://instagram.com/cledson_cavalcanti">Fotos</a></li>
-        <li><a href="https://www.youtube.com/channel/UCLaPbBMEC9LsOhF_pTecEqw">Vídeos</a></li>
+        <li>
+          <a href="https://github.com/cledsupper">
+            <img class="item-icon" onerror="onIconFail(0)" src="https://github.com/favicon.ico" alt="Ícone do GitHub"/> Projetos acadêmicos e profissionais
+          </a>
+        </li>
+        <li>
+          <a href="https://gitlab.com/cledsupper">
+            <img class="item-icon" onerror="onIconFail(1)" src="https://gitlab.com/favicon.ico" alt="Ícone do GitLab"/> Projetos pessoais e comunitários.
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/cledson_cavalcanti">
+            <img class="item-icon" onerror="onIconFail(2)" src="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico" alt="Ícone do Instagram"/> @cledson_cavalcanti
+          </a>
+        </li>
+        <li>
+          <a rel="me" href="https://mastodon.technology/@cledson_cavalcanti">
+            <img class="item-icon" onerror="onIconFail(3)" src="https://mastodon.technology/favicon.ico" alt="Ícone do Mastodon"/> Microblog
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/cledson-ferreira-cavalcanti-323959175/">
+            <img class="item-icon" onerror="onIconFail(4)" src="https://static-exp1.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" alt="Ícone do Linkedin"/> Linkedin
+          </a>
+        </li>
       </ul>
       <br>
 
@@ -29,5 +50,6 @@
       </div>
     </div>
     <script src="scripts/easter.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
