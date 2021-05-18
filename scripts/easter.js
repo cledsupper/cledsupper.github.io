@@ -9,8 +9,8 @@ function easterOkClick() {
   history.back()
 }
 
-setTimeout(() => {
+/* setTimeout(() => {
   document.body.style.margin = '0px'
   main.style.display = 'none'
   easterbox.style.display = 'flex'
-}, 15000)
+}, 15000) */
