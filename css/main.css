@@ -15,7 +15,7 @@ a:active {
 .item-icon {
   vertical-align: middle;
 }
-#social-links>li {
+.links-detailed>li {
   list-style-type: none;
   margin: 1em;
 }
