@@ -1,5 +1,35 @@
 body {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: Ubuntu Mono, sans-serif;
+}
+
+main {
+   width: 70vw;
+   margin: auto;
+}
+
+h3 {
+   display: inline-block;
+   align-items: center;
+}
+
+.app-logo {
+   width: 2rem;
+}
+
+.div-media {
+   width: inherit;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.images {
+   width: inherit;
+   max-width: max-content;
+}
+
+.titles {
+   text-align: center;
 }
 
 a:link, a:visited {
@@ -22,9 +52,8 @@ a:active {
 
 #win-cr {
   display: flex;
-  width: 95vw;
+  width: inherit;
   padding: 16px;
-  align-items: center;
   justify-content: center;
 }
 
