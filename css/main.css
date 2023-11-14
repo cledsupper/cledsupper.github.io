@@ -3,13 +3,23 @@ body {
 }
 
 main {
-   width: 70vw;
+   width: 80vw;
    margin: auto;
 }
 
-h3 {
+.icon-bar,h3 {
    display: inline-block;
-   align-items: center;
+}
+
+.icon-bar {
+   width: inherit;
+   text-align: center;
+}
+
+.icons-bar {
+   margin: 1rem;
+   width: 4em;
+   height: 4em;
 }
 
 .app-logo {

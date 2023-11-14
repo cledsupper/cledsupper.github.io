@@ -9,32 +9,6 @@
     <link rel="stylesheet" href="css/easter.css">
 
     <script>
-      var list_icons_fail = []
-
-      function onIconFail(index) {
-        list_icons_fail.push(index)
-        console.error('Falha ao carregar ícone ' + index)
-      }
-
-      // Altera o tamanho de todos os ícones para o menor tamanho de um ícone disponível
-      function refreshIcons() {
-        var list_icons = document.getElementsByClassName('item-icon')
-        var min_height = list_icons[0].height
-
-        for (let i=1; i < list_icons.length; i++) {
-          // Ignorar ícones não carregados
-          if (list_icons_fail.indexOf(i) > -1) { continue }
-        
-          if (list_icons[i].height < min_height)
-            min_height = list_icons[i].height
-        }
-
-        for (let i=0; i < list_icons.length; i++) {
-          list_icons[i].width = min_height
-          list_icons[i].height = min_height
-        }
-      }
-
       function winCRClose() {
         document.getElementById('win-cr').style.display = 'none'
       }
@@ -46,9 +20,26 @@
       <h5 class="titles">Servidor público e desenvolvedor do EmuBateria</h5>
       <br>
       
+      <div class="icon-bar">
+         <a href="https://github.com/cledsupper">
+            <img class="icons-bar" src="assets/GitHub-Mark-64px.png" alt="Ícone do GitHub"/>
+         </a>
+         <a href="https://gitlab.com/cledsupper">
+            <img class="icons-bar" src="assets/gitlab-icon-rgb.png" alt="Ícone do GitLab"/>
+         </a>
+         <a href="https://www.linkedin.com/in/cledson-ferreira">
+            <img class="icons-bar" src="assets/linkedin.png" alt="Ícone do Linkedin"/>
+         </a>
+         <a href="https://instagram.com/cledsonferr315">
+            <img class="icons-bar" src="assets/logotipo-do-instagram.png"  alt="Ícone do Instagram" />
+         </a>
+      </div>
+      
+      <br/>
+      
       <h3><img class="app-logo" src="selfart/EmuBateria.png" alt="Ícone do EmuBateria"/> EmuBateria</h3>
 
-      <p>O EmuBateria é um aplicativo que eu desenvolvi para solucionar um problema de desligamento inesperado que váries utilizadores de dispositivos Android portáteis enfrentam após pelo menos um ano de uso desde a aquisição de seu aparelho.</p>
+      <p>O <a href="#emubateria-download">EmuBateria</a> é um aplicativo que eu desenvolvi para solucionar um problema de desligamento inesperado que váries utilizadores de dispositivos Android portáteis enfrentam após pelo menos um ano de uso desde a aquisição de seu aparelho.</p>
       
       <div class="div-media">
          <img class="images" src="selfart/EmuBateriaClock.png" alt="Relógio do EmuBateria indicando 100% de carga" />
@@ -66,38 +57,13 @@
       
       <p>Por hora, em razão das minhas dificuldades financeiras para a criação da conta de desenvolvedor na Google Play, estou publicando as atualizações do aplicativo em um canal de Telegram homônimo. Em breve ele estará disponível para download através da principal loja do sistema Android.</p>
       
-      <div class="div-media">
+      <div id="emubateria-download" class="div-media">
          <a href="https://t.me/emubateria">
             <img class="images" src="assets/logotipo-do-telegram.png" alt="Logo do Telegram para atualizações oficiais do EmuBateria" />
             <p>Baixe gratuitamente no Telegram :)</p>
          </a>
       </div>
       
-      <br>
-
-      <h3>Repositórios</h3>
-      <ul class="links-detailed">
-        <li>
-          <a href="https://github.com/cledsupper">
-            <img class="item-icon" onerror="onIconFail(0)" src="assets/GitHub-Mark-64px.png" alt="Ícone do GitHub"/> Projetos no GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://gitlab.com/cledsupper">
-            <img class="item-icon" onerror="onIconFail(1)" src="assets/gitlab-icon-rgb.png" alt="Ícone do GitLab"/> Projetos no GitLab
-          </a>
-        </li>
-      </ul>
-      <br>
-
-      <h3>Redes sociais</h3>
-      <ul class="links-detailed">
-        <li>
-          <a href="https://www.linkedin.com/in/cledson-ferreira">
-            <img class="item-icon" onerror="onIconFail(2)" src="assets/linkedin.png" alt="Ícone do Linkedin"/> Perfil público no Linkedin
-          </a>
-        </li>
-      </ul>
       <br>
 
       <p>por <span style="color: #00AAAA">led</span><span style="color: #AA00AA">so</span></p>
@@ -109,7 +75,7 @@
             <h3 style="display: inline-block">Atribuição de autoria</h3> <a id="win-cr-close" href="javascript:winCRClose()">[X]</a>
           </div>
           <ul>
-            <li>Ícones do Linkedin e do Telegram feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.</li>
+            <li>Ícones do Linkedin, Instagram e do Telegram feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.</li>
           </ul>
         </div>
       </div>
